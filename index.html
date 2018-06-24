@@ -95,19 +95,25 @@
         <h2 class="visually-hidden">ПОИСК ГОСТИНИЦЫ</h2>
           <b>ЗАИНТЕРЕСОВАЛИСЬ?</b>
           <p>УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-          <button type="button" name="search-hotels" value="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ"></button>
+          <button type="button" name="search-hotels">Поиск гостиницы в СЕДОНЕ</button>
         <div class="map">
           <img src="img/map.png" width="150" height="150" alt="Map">
           <form class="form-search" method="get" action="https://echo.htmlacademy.ru"><!--Календарик для формы <img src="img/calendar.svg">-->
             <label for="ad">Дата заезда</label>
-            <input id="ad" type="text" name="arrival date" placeholder="24 Апреля 2017">
+            <input class="ad" id="ad" type="text" name="arrival date" placeholder="24 Апреля 2017">
+            <button class="calendar" type="button" name="calendar"></button>
             <label for="dod">Дата выезда</label>
-            <input id="dod" type="text" name="date of departure" placeholder="4 Июля 2017">
+            <input class="dod" id="dod" type="text" name="date of departure" placeholder="4 Июля 2017">
+            <button class="calendar" type="button" name="calendar"></button>
             <label for="adult">Взрослые</label>
-            <input id="adult" type="number" name="adult">
+            <button type="button" name="minus-adult"><span class="icon-minus"></span></button>
+            <input class="adult" id="adult" type="number" name="adult" value="2">
+            <button type="button" name="plus-adult"><span class="icon-plus"></span></button>
             <label for="child">Дети</label>
-            <input id="child" type="number" name="child">
-            <button type="submit" name="search" class="button">Найти</button>
+            <button type="button" name="minus-child"><span class="icon-minus"></span></button>
+            <input class="child" id="child" type="number" name="child" value="0">
+            <button type="button" name="plus-child"><span class="icon-plus"></span></button>
+            <button type="button" name="search" class="button">Найти</button>
           </form>
         </div>
       </section>
