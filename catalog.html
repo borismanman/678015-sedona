@@ -22,6 +22,26 @@
       <h1 class="visually-hidden">Гостиницы</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
+        <form class="form-hotels" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>Инфраструктура:
+            <legend>Инфраструктура:</legend>
+              <label><input type="checkbox" name="pull">Бассейн</label>
+              <label><input type="checkbox" name="parking">Парковка</label>
+              <label><input type="checkbox" name="wi-fi">Wi-Fi</label>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья</legend>
+            <label><input type="checkbox" name="hotel">Гостиница</label>
+            <label><input type="checkbox" name="motel">Мотель</label>
+            <label><input type="checkbox" name="appatment">Апартаменты</label>
+          </fieldset>
+          <fieldset>
+            <legend>Стоимость в сутки(Р):</legend>
+            <label>От<input type="text" value="0" name="form"></label>
+            <label>До<input type="text" value="3000" name="before"></label>
+            <input type="range" name="range">
+            <button type="button" name="button" name="button">Показать</button>
+          </fieldset>
           <!--Здесь будет форма--><!--Изображения для формы <img src="img/filterbutton.svg"> <img src="img/checkboxon.svg"> <img src="img/checkboxoff.svg">-->
       </section>
       <section>
