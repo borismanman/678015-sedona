@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -24,23 +26,35 @@
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="form-hotels" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-            <legend>Инфраструктура:</legend>
-              <label><input type="checkbox" name="pull"><span>Бассейн</span></label>
-              <label><input type="checkbox" name="parking"><span>Парковка</span></label>
-              <label><input type="checkbox" name="wi-fi"><span>Wi-Fi</span></label>
+          <legend>Инфраструктура:</legend>
+          <label>
+            <input type="checkbox" name="pull" checked><span>Бассейн</span>
+          </label>
+          <label>
+            <input type="checkbox" name="parking"><span>Парковка</span>
+          </label>
+          <label>
+            <input type="checkbox" name="wi-fi"><span>Wi-Fi</span>
+          </label>
           </fieldset>
           <fieldset>
-            <legend>Тип жилья</legend>
-            <label><input type="checkbox" name="hotel"><span>Гостиница</span></label>
-            <label><input type="checkbox" name="motel"><span>Мотель</span></label>
-            <label><input type="checkbox" name="appatment"><span>Апартаменты</span></label>
+          <legend>Тип жилья</legend>
+          <label>
+            <input type="checkbox" name="hotel" checked><span>Гостиница</span>
+          </label>
+          <label>
+            <input type="checkbox" name="motel" checked><span>Мотель</span>
+          </label>
+          <label>
+            <input type="checkbox" name="appatment" checked><span>Апартаменты</span>
+          </label>
           </fieldset>
           <fieldset>
-            <legend>Стоимость в сутки(Р):</legend>
-            <label>От<input type="text" value="0" name="form"></label>
-            <label>До<input type="text" value="3000" name="before"></label>
-            <input type="range" name="range">
-            <button type="button" name="submit" name="button">Показать</button>
+          <legend>Стоимость в сутки(Р):</legend>
+          <label>От<input type="text" value="0" name="form"></label>
+          <label>До<input type="text" value="3000" name="before"></label>
+          <input type="range" name="range">
+          <button type="button" name="submit" name="button">Показать</button>
           </fieldset>
           <!--Здесь будет форма--><!--Изображения для формы <img src="img/filterbutton.svg"> <img src="img/checkboxon.svg"> <img src="img/checkboxoff.svg">-->
       </section>

@@ -2,7 +2,8 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -22,16 +23,16 @@
     <main class="container">
       <div class="welcome">
         <h1 class="visually-hidden">Город Седона</h1>
-        <img src="img/welcome.png" width="300" height="300" alt="welcome">
+        <img class="welcome" src="img/welcome.png" width="" height="" alt="welcome">
       </div>
       <section class="discript">
         <h2 class="visually-hidden">Основные причины</h2>
         <h3 class="causes">СЕДОНА-НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ, ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h3>
-        <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН! </p>
+        <p class="causes5">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН! </p>
         <ul class="causes-block">
           <li class="causes-block-1">
-            <div>
-              <h3>НАСТОЯЩИЙ ГОРОДОК</h3>
+            <div class="causes1div">
+              <h3 class="causes1">НАСТОЯЩИЙ ГОРОДОК</h3>
               <span>-№1-</span>
               <p>СЕДОНА-НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
               <img src="img/city.png" width="150" height="100" alt="Фото города">
@@ -95,33 +96,33 @@
         <h2 class="visually-hidden">ПОИСК ГОСТИНИЦЫ</h2>
           <b>ЗАИНТЕРЕСОВАЛИСЬ?</b>
           <p>УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-          <button type="button" name="search-hotels">Поиск гостиницы в СЕДОНЕ</button>
+          <button type="button" name="search-hotels" class="search-button">Поиск гостиницы в СЕДОНЕ</button>
         <div class="map">
-          <img src="img/map.png" width="150" height="150" alt="Map">
+          <img src="img/map.png" width="" height="" alt="Map">
           <form class="form-search" method="get" action="https://echo.htmlacademy.ru"><!--Календарик для формы <img src="img/calendar.svg">-->
-            <div>
+            <div class="dateA">
               <label for="ad">Дата заезда</label>
               <input class="ad" id="ad" type="text" name="arrival date" placeholder="24 Апреля 2017">
               <button class="calendar" type="button" name="calendar"></button>
             </div>
-            <div>
+            <div class="dateD">
               <label for="dod">Дата выезда</label>
               <input class="dod" id="dod" type="text" name="date of departure" placeholder="4 Июля 2017">
               <button class="calendar" type="button" name="calendar"></button>
             </div>
-            <div>
+            <div class="adultD">
               <label for="adult">Взрослые</label>
               <button type="button" name="minus-adult"><span class="icon-minus"></span></button>
               <input class="adult" id="adult" type="number" name="adult" value="2">
               <button type="button" name="plus-adult"><span class="icon-plus"></span></button>
             </div>
-            <div>
+            <div class="childA">
               <label for="child">Дети</label>
               <button type="button" name="minus-child"><span class="icon-minus"></span></button>
               <input class="child" id="child" type="number" name="child" value="0">
               <button type="button" name="plus-child"><span class="icon-plus"></span></button>
             </div>
-              <button type="button" name="search" class="button">Найти</button>
+              <button type="button" name="search" class="buttonS">Найти</button>
           </form>
         </div>
       </section>
@@ -132,9 +133,9 @@
       </div>
       <div class="social">
         <ul>
-          <li><a href="https://twitter.com"><img src="img/twitter.svg" width="150" height="100" alt="Twitter"></a></li>
-          <li><a href="https://www.facebook.com"><img src="img/fb.svg" width="150" height="100" alt="Facebook"></a></li>
-          <li><a href="https://www.youtube.com"><img src="img/youtube.svg" width="50" height="50" alt="Youtube"></a></li>
+          <li class="twitter"><a href="https://twitter.com"><img src="img/twitter.svg" width="150" height="100" alt="Twitter"></a></li>
+          <li class="facebook"><a href="https://www.facebook.com"><img src="img/fb.svg" width="150" height="100" alt="Facebook"></a></li>
+          <li class="youtube"><a href="https://www.youtube.com"><img src="img/youtube.svg" width="50" height="50" alt="Youtube"></a></li>
         </ul>
       </div>
       <div class="developer-item">
