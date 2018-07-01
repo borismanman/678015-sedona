@@ -26,37 +26,42 @@
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="form-hotels" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-          <legend>Инфраструктура:</legend>
-          <label>
-            <input type="checkbox" name="pull" checked><span>Бассейн</span>
-          </label>
-          <label>
-            <input type="checkbox" name="parking"><span>Парковка</span>
-          </label>
-          <label>
-            <input type="checkbox" name="wi-fi"><span>Wi-Fi</span>
-          </label>
+            <legend>Инфраструктура:</legend>
+            <label>
+              <input type="checkbox" name="pull" checked>
+              <span>Бассейн</span>
+            </label>
+            <label>
+              <input type="checkbox" name="parking">
+              <span>Парковка</span>
+            </label>
+            <label>
+              <input type="checkbox" name="wi-fi">
+              <span>Wi-Fi</span>
+            </label>
           </fieldset>
           <fieldset>
-          <legend>Тип жилья</legend>
-          <label>
-            <input type="checkbox" name="hotel" checked><span>Гостиница</span>
-          </label>
-          <label>
-            <input type="checkbox" name="motel" checked><span>Мотель</span>
-          </label>
-          <label>
-            <input type="checkbox" name="appatment" checked><span>Апартаменты</span>
-          </label>
+            <legend>Тип жилья</legend>
+            <label>
+              <input type="checkbox" name="hotel" checked>
+              <span>Гостиница</span>
+            </label>
+            <label>
+              <input type="checkbox" name="motel" checked>
+              <span>Мотель</span>
+            </label>
+            <label>
+              <input type="checkbox" name="appatment" checked>
+              <span>Апартаменты</span>
+            </label>
           </fieldset>
           <fieldset>
-          <legend>Стоимость в сутки(Р):</legend>
-          <label>От<input type="text" value="0" name="form"></label>
-          <label>До<input type="text" value="3000" name="before"></label>
-          <input type="range" name="range">
-          <button type="button" name="submit" name="button">Показать</button>
+            <legend>Стоимость в сутки(Р):</legend>
+            <label>От<input type="text" value="0" name="form"></label>
+            <label>До<input type="text" value="3000" name="before"></label>
+            <input type="range" name="range">
+            <button type="button" name="submit" name="button">Показать</button>
           </fieldset>
-          <!--Здесь будет форма--><!--Изображения для формы <img src="img/filterbutton.svg"> <img src="img/checkboxon.svg"> <img src="img/checkboxoff.svg">-->
       </section>
       <section>
         <div class="found">
@@ -65,7 +70,7 @@
         <div class="sorting">
           <span>СОРТИРОВКА</span>
           <ul class="sorting-list">
-            <li><a href="#">ПО ЦЕНЕ</a></li>
+            <li><a class="active" href="#">ПО ЦЕНЕ</a></li>
             <li><a href="#">ПО ТИПУ</a></li>
             <li><a href="#">ПО РЕЙТИНГУ</a></li>
           </ul>
@@ -85,13 +90,13 @@
             <img src="img/aamara.png" width="150" height="100"  alt="AMARA RESORT & SPA">
           </div>
           <div class="result-description">
-          <h2><a href="#">AMARA RESORT & SPA</a></h2>
+          <h2 class="hotels"><a href="#">AMARA RESORT & SPA</a></h2>
             <span>ГОСТИНИЦА</span>
-            <a href="#">ПОДРОБНЕЕ</a>
+            <span class="moreinfo"><a href="#" width="110" height="27">ПОДРОБНЕЕ</a></span>
           </div>
           <div class="result-description">
             <span>ОТ 4000 Р.</span>
-            <a href="#">ЗАБРОНИРОВАТЬ</a>
+            <span class="bookit"><a href="#">ЗАБРОНИРОВАТЬ</a></span>
           </div>
           <div class="rating">
             <div class="rating-star">
@@ -110,13 +115,13 @@
             <img src="img/ddesert.png" width="150" height="100"  alt="DESERT QUAIL INN">
           </div>
           <div class="result-description">
-            <h2><a href="#">DESERT QUAIL INN</a></h2>
+            <h2 class="hotels"><a href="#">DESERT QUAIL INN</a></h2>
             <span>МОТЕЛЬ</span>
-            <a href="#">ПОДРОБНЕЕ</a>
+            <span class="moreinfo"><a href="#">ПОДРОБНЕЕ</a></span>
           </div>
           <div class="result-description">
             <span>ОТ 3000 Р.</span>
-            <a href="#">ЗАБРОНИРОВАТЬ</a>
+            <span class="bookit"><a href="#">ЗАБРОНИРОВАТЬ</a><span>
           </div>
           <div class="rating">
             <div class="rating-star">
@@ -134,13 +139,13 @@
             <img src="img/vvillas.png" width="150" height="100"  alt="VILLAS AT POCO DIABLO">
           </div>
           <div class="result-description">
-            <h2><a href="#">VILLAS AT POCO DIABLO</a></h2>
+            <h2 class="hotels"><a href="#">VILLAS AT POCO DIABLO</a></h2>
             <span>АПАРТАМЕНТЫ</span>
-            <a href="#">ПОДРОБНЕЕ</a>
+            <span class="moreinfo"><a href="#">ПОДРОБНЕЕ</a></span>
           </div>
           <div class="result-description">
             <span>ОТ 2000 Р.</span>
-            <a href="#">ЗАБРОНИРОВАТЬ</a>
+            <span class="bookit"><a href="#">ЗАБРОНИРОВАТЬ</a></span>
           </div>
           <div class="rating">
             <div class="rating-star">
@@ -158,14 +163,14 @@
       <div class="tag-item"><a href="#">#VISITSEDONA</a></div>
       <div class="social">
         <ul>
-          <li><a href="https://twitter.com"><img src="img/twitter.svg" width="150" height="100" alt="Twitter"></a></li>
-          <li><a href="https://www.facebook.com"><img src="img/fbicon.svg" width="150" height="100" alt="Facebook"></a></li>
-          <li><a href="https://www.youtube.com"><img src="img/youtube.svg" width="150" height="100" alt="Youtube"></a></li>
+          <li class="socialbc twitter"><a href="https://twitter.com"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
+          <li class="socialbc facebook"><a href="https://www.facebook.com"><img src="img/fb.svg" width="12" height="22" alt="Facebook"></a></li>
+          <li class="socialbc youtube"><a href="https://www.youtube.com"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a></li>
         </ul>
       </div>
       <div class="developer-item">
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logohtmlacademy.svg" width="150" height="100" alt="HTML Academy">
+          <img src="img/logo-htmlacademy.svg" width="200" height="200" alt="HTML Academy">
         </a>
       </div>
     </footer>
