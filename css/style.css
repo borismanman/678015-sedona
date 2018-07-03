@@ -15,10 +15,9 @@ body{
 	background-size: ;
 	box-sizing: content-box;
 
-	width: auto;
 	min-height: auto;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin: 0 auto;
+	text-align: center;
 }
 
 a{
@@ -62,34 +61,31 @@ header ul {
 .discript {
 	background-color: white;
 	margin-top: -6px;
-	height: 1315px;
 }
 
 .site-navigation li:nth-child(1) {
-	padding-left: 72px;
+	text-align: left;
+	padding-left: 73px;
 }
 
 .site-navigation li:nth-child(2) {
-	margin-right: 240px;
-	text-align: center;
+	text-align: left;
 }
 
 .site-navigation li:nth-child(3) {
-	text-align: center;
+	text-align: right;
+	padding-left: 98px;
 }
 
 .site-navigation li:nth-child(4) {
-	padding-right: 72px;
 	text-align: right;
 }
 
 .site-navigation li {
-	box-sizing: border-box;
-	width: 240px;
-	list-style: none;
+	width: 239px;
 }
 
-.header-logo {
+.main-header-logo {
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -97,7 +93,9 @@ header ul {
 }
 
 .site-navigation {
-	list-style: none;
+	width: 1200px;
+	border: 1px solid orange;
+
 }
 
 .site-navigation li {
@@ -116,6 +114,10 @@ header ul {
 
 .site-navigation a:focus {
 	color: #b2b2b2;
+}
+
+.site-naigation ul {
+	text-align: center;
 }
 
 img {
@@ -172,7 +174,7 @@ img {
 	margin-right: auto;
 	border: 1px solid red;
 	width: 1200px;
-	height: 1099px;
+	height: 1098;
 	justify-content: center;
 }
 
@@ -192,17 +194,20 @@ img {
 	display: flex;
 	flex-direction: row;
 	padding-right: 135px;
+	height: 330px;
 }
 
 .causes-food {
 	display: flex;
 	flex-direction: row;
+	height: 330px;
 }
 
 .causes-souvenirs{
 	display: flex;
 	flex-direction: row;
 	padding-left: 125px;
+	height: 330px;
 
 }
 
@@ -210,8 +215,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
-	padding-top: 67px;
-	margin-bottom: -6px;
+	height: 256px;
 }
 
 .causes-block-4 {
@@ -633,25 +637,18 @@ ul .causes-block-2 p {
 	cursor: default;
 }
 
-.main {
-	width: 1200px;
-}
-
 .search-hotels {
-	margin-top: -65px;
-	height: 764px;
 	width: 1200px;
+	margin: 0 auto;
 	border: 1px solid green;
 	text-align: center;
+
 }
 
 .form-search {
-	text-align: center;
-	padding-top: px;
-	padding-right: px;
-	padding-left: px;
-	padding-bottom: px;
 	border: 1px solid red;
 	width: 568px;
 	height: 395px;
+	margin: 0 auto;
+	text-align: center;
 }
