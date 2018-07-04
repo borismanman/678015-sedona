@@ -34,12 +34,10 @@ a{
 
 .main-navigation {
 	font-size: 14px;
-	font-height: 26px;
+	line-height: 26px;
 	color: black;
 
 	background-color: white;
-	display: flex;
-	justify-content: center;
 	margin: 0px auto;
 	width: 1200px;
 	height: 56px;
@@ -65,7 +63,6 @@ header ul {
 
 .site-navigation li:nth-child(1) {
 	text-align: left;
-	padding-left: 73px;
 }
 
 .site-navigation li:nth-child(2) {
@@ -74,7 +71,7 @@ header ul {
 
 .site-navigation li:nth-child(3) {
 	text-align: right;
-	padding-left: 98px;
+	margin left: 20%;
 }
 
 .site-navigation li:nth-child(4) {
@@ -82,20 +79,22 @@ header ul {
 }
 
 .site-navigation li {
-	width: 239px;
+	width: 20%;
+	margin: 0 auto;
 }
 
 .main-header-logo {
 	position: absolute;
 	top: 0;
-	left: 50%;
-	margin-left: -69px;
+	left: 0;
+	right: 0;
+	width: 138px;
+	height: 78px;
+	margin: auto;
 }
 
 .site-navigation {
-	width: 1200px;
-	border: 1px solid orange;
-
+	width: 100%;
 }
 
 .site-navigation li {
@@ -128,7 +127,7 @@ img {
 	margin-top: 17px;
 }
 
-.welcome-figure::after {
+.welcome-title::after {
 	content: url(../img/backgrounddd.png);
 	position: relative;
 	top: 17px;
@@ -145,6 +144,8 @@ img {
 	color: black;
 	margin-top: 41px;
 	margin-bottom: 27px;
+	margin-left: 350px;
+	margin-right: 350px; 
 	background-color: white;
 }
 
@@ -153,6 +154,7 @@ img {
 	font-size: 14px;
 	font-height: 26px;
 	color: #333333;
+	margin-bottom: 50px;
 
 	background-color: white;
 }
@@ -172,9 +174,7 @@ img {
 	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
-	border: 1px solid red;
-	width: 1200px;
-	height: 1098;
+	width: 100%;
 	justify-content: center;
 }
 
@@ -218,28 +218,9 @@ img {
 	height: 256px;
 }
 
-.causes-block-4 {
-	display: flex;
-	flex-direction: row;
+.other-reasons {
 	width: 400px;
 	height: 256px;
-	justify-content: center;
-}
-
-.causes-block-5 {
-	display: flex;
-	flex-direction: row;
-	width: 400px;
-	height: 256px;
-	justify-content: center;
-}
-
-.causes-block-6 {
-	display: flex;
-	flex-direction: row;
-	width: 400px;
-	height: 256px;
-	justify-content: center;
 }
 
 .food {
@@ -265,9 +246,9 @@ img {
 
 .bridge {
 	background-color: #81b3d2;
+	text-align: center;
 	width: 400px;
 	height: 256px;
-	text-align: center;
 	padding-top: 20px;
 }
 
@@ -341,17 +322,10 @@ ul .causes-block-2 p {
 
 }
 
-.causes-block-4 {
+.other-reasons {
 	background-color: #eeeeee;
 }
 
-.causes-block-5 {
-	background-color: #eeeeee;
-}
-
-.causes-block-6 {
-	background-color: #eeeeee;
-}
 
 .area h3 {
 	font-size: 21px;
@@ -440,11 +414,23 @@ ul .causes-block-2 p {
 	font-height: 26px;
 	font-weight: bold;
 	color: #000000;
+	width: 100%;
+	position: relative;
+	margin-left: 43px;
+	margin-right: 43px;
+	font-weight: bold;
+	color: #000000;
 }
 
 .date-departure {
 	font-size: 14px;
 	font-height: 26px;
+	font-weight: bold;
+	color: #000000;
+	width: 100%;
+	position: relative;
+	margin-left: 43px;
+	margin-right: 43px;
 	font-weight: bold;
 	color: #000000;
 }
@@ -454,6 +440,9 @@ ul .causes-block-2 p {
 	font-height: 26px;
 	font-weight: bold;
 	color: #000000;
+	position: relative;
+	width: 33%;
+	margin-right: 55px;
 }
 
 .adult-div {
@@ -461,6 +450,10 @@ ul .causes-block-2 p {
 	font-height: 26px;
 	font-weight: bold;
 	color: #000000;
+	position: relative;
+	width: 47%;
+	text-align: left;
+	margin-left: 45px;
 }
 
 .buttonS {
@@ -520,17 +513,51 @@ ul .causes-block-2 p {
 }
 
 .calendar {
+	list-style: none;
 	background-image: url("../img/calendar.svg");
 	background-repeat: no-repeat;
-	background-color: white;
-	width: 25px;
-	height: 25px;
+	background-color: #f2f2f2;
+	width: 21px;
+	height: 22px;
+	border: none;
+	outline: none;
+	position: absolute;
+	top: 8px;
+	right: 21px;
+}
+
+.calendar:hover {
+	background-image: url("../img/calendarblack.svg");
+	background-repeat: no-repeat;
+	background-color: #f2f2f2;
+	width: 21px;
+	height: 22px;
 	border: 0;
+	position: absolute;
+	top: 8px;
+	right: 21px;
+}
+
+.calendar:focus {background-image: url("../img/calendarblue.svg");
+	background-repeat: no-repeat;
+	background-color: #f2f2f2;
+	width: 21px;
+	height: 22px;
+	border: 0;
+	position: absolute;
+	top: 8px;
+	right: 21px;
 }
 
 .date {
 	background-color: #f2f2f2;
 	border: none;
+	width: 346px;
+	height: 38px;
+	position: relative;
+	margin-left: 21px;
+	font-weight: bold;
+	color: #000000;
 }
 
 .date:hover {
@@ -638,17 +665,166 @@ ul .causes-block-2 p {
 }
 
 .search-hotels {
-	width: 1200px;
+	width: 100%;
 	margin: 0 auto;
-	border: 1px solid green;
+	margin-top: -15px;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
 
+.map {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: flex;
+	justify-content: center;
 }
 
 .form-search {
-	border: 1px solid red;
 	width: 568px;
 	height: 395px;
 	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	background-color: #ffffff;
+}
+
+.page-wrap {
+	width: 1200px;
+	margin: 0 auto;
+	box-shadow: 0px 0px 40px 40px #f2f2f2;
+}
+
+.footer {
+	display: flex;
+	align-items: center;
+	background-color: rgba(255,255,255,0.5);
+	margin: 0 auto;
+	width: 100%;
+	height: 120px;
+	margin-top: -120px;
+	position: relative;
+	z-index: 2;
+}
+
+.width-social {
+	width: 33%;
+}
+
+.social ul {
 	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social li {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	border: none;
+	outline: none;
+	list-style: none;
+	width: 38px;
+	height: 38px;
+	position: absolute;
+	background-color: #f2f2f2;
+}
+
+.child {
+	width: 38px;
+	height: 36px;
+	border: none;
+	outline: none;
+	background-color: #f2f2f2;
+	margin-left: 50px;
+	text-align: center;
+}
+
+.adult {
+	width: 38px;
+	height: 36px;
+	border: none;
+	outline: none;
+	background-color: #f2f2f2;
+	margin-left: 78px;
+	text-align: center;
+}
+
+.minus {
+	position: absolute;
+	border: none;
+	outline: none;
+	list-style: none;
+	top: 0;
+	right: 113px;
+}
+
+.plus {
+	position: absolute;
+	border: none;
+	outline: none;
+	list-style: none;
+	top: 0;
+	right: 38px;
+}
+
+.plusch {
+	position: absolute;
+	top: 0;
+	right: -9px;
+}
+
+.minusch {
+	position: absolute;
+	top: 0;
+	right: 67px;
+}
+
+.icon-minus {
+	list-style: none;
+	border: none;
+	font-weight: bold;
+	color: #a9a9a9;
+}
+
+.icon-plus {
+	list-style: none;
+	border: none;
+	font-weight: bold;
+	color: #a9a9a9;
+}
+
+.icon-plus {
+	font-weight: bold;
+}
+
+.icon-minus:hover {
+	font-weight: bold;
+	color: #000000;
+}
+
+.icon-plus:hover {
+	font-weight: bold;
+	color: #000000;
+}
+
+.icon-minus:focus {
+	font-weight: bold;
+	color: blue;
+}
+
+.icon-plus:focus {
+	font-weight: bold;
+	color: #81b3d2;
 }

@@ -7,6 +7,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <div class="page-wrap">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
@@ -21,10 +22,9 @@
       </nav>
     </header>
     <main class="container">
-      <div class="welcome">
+      <div class="welcome-title">
         <h1 class="visually-hidden">Город Седона</h1>
         <img class="welcome" src="img/welcome.png" width="458" height="352" alt="welcome">
-        <div class="welcome-figure"></div>
       </div>
       <section class="discript">
         <h2 class="visually-hidden">Основные причины</h2>
@@ -74,21 +74,21 @@
               <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ ВЫ КОНЕЧНО ОСМЕЛИТЕСЬ</p>
             </div>
           </li>
-          <li class="causes-block-4">
+          <li class="other-reasons">
             <div class="area">
               <h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
               <span>-№3-</span>
               <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br> НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
             </div>
           </li>
-          <li class="causes-block-5">
+          <li class="other-reasons">
             <div class="road">
               <h3>КРАСИВАЯ ДОРОГА</h3>
               <span>-№4-</span>
               <p>ЕХАТЬ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br> НЕ СКУЧНО!</p>
             </div>
           </li>
-          <li class="causes-block-6">
+          <li class="other-reasons">
             <div class="tourist">
               <h3>МАЛО ТУРИСТОВ</h3>
               <span>-№5-</span>
@@ -103,50 +103,50 @@
           <p>УКАЖИТЕ ПРЕДПОЛОГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br> И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
           <button type="button" name="search-hotels" class="search-button">Поиск гостиницы в СЕДОНЕ</button>
         <div class="map">
-          <img src="img/map.png" width="1200" height="593" alt="Map">
+          <img class="map-map" src="img/map.png" width="1200" height="593" alt="Map">
           <form class="form-search" method="get" action="https://echo.htmlacademy.ru"><!--Календарик для формы <img src="img/calendar.svg">-->
             <div class="date-arrival">
-              <label for="ad">Дата заезда</label>
+              <label for="ad">Дата заезда:</label>
               <input class="date" id="ad" type="text" name="arrival date" placeholder="24 Апреля 2017">
               <button class="calendar" type="button" name="calendar"></button>
             </div>
             <div class="date-departure">
-              <label for="dod">Дата выезда</label>
+              <label for="dod">Дата выезда:</label>
               <input class="date" id="dod" type="text" name="date of departure" placeholder="4 Июля 2017">
               <button class="calendar" type="button" name="calendar"></button>
             </div>
             <div class="adult-div">
-              <label for="adult">Взрослые</label>
-              <button type="button" name="minus-adult"><span class="icon-minus"></span></button>
-              <input class="adult" id="adult" type="number" name="adult" value="2">
-              <button type="button" name="plus-adult"><span class="icon-plus"></span></button>
+              <label for="adult">Взрослые:</label>
+              <button class="button minus" type="button" name="minus-adult"><span class="icon-minus">-</span></button>
+              <input class="adult" id="adult" type="text" name="adult" value="2">
+              <button class="button plus" type="button" name="plus-adult"><span class="icon-plus">+</span></button>
             </div>
             <div class="child-div">
-              <label for="child">Дети</label>
-              <button type="button" name="minus-child"><span class="icon-minus"></span></button>
-              <input class="child" id="child" type="number" name="child" value="0">
-              <button type="button" name="plus-child"><span class="icon-plus"></span></button>
+              <label for="child">Дети:</label>
+              <button class="button minusch" type="button" name="minus-child"><span class="icon-minus">-</span></button>
+              <input class="child" id="child" type="text" name="child" value="0">
+              <button class="button plusch" type="button" name="plus-child"><span class="icon-plus">+</span></button>
             </div>
               <button type="button" name="search" class="buttonS">Найти</button>
           </form>
         </div>
       </section>
     </main>
-    <footer>
-      <div class="tag-item">
+    <footer class="footer">
+      <div class="tag-item width-social">
         <a href="#">#VISITSEDONA</a>
       </div>
-      <div class="social">
+      <div class="social width-social">
         <ul>
           <li class="socialbc twitter"><a href="https://twitter.com"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
           <li class="socialbc facebook"><a href="https://www.facebook.com"><img src="img/fb.svg" width="12" height="22" alt="Facebook"></a></li>
           <li class="socialbc youtube"><a href="https://www.youtube.com"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a></li>
         </ul>
       </div>
-      <div class="developer-item">
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="200" height="200" alt="HTML Academy"></a>
+      <div class="developer-item width-social">
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="200" height="120" alt="HTML Academy"></a>
       </div>
-        
+    </div>
     </footer>
 
   </body>
