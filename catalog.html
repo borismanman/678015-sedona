@@ -7,13 +7,12 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <div class="page-wrap">
     <header class="main-header">
       <nav class="main-navigation">
-        <div class="header-logo">
-          <a class="main-header-logo" href="index.html">
-            <img src="img/logo.png" width="138" height="70" alt="city of sedona">
-          </a>
-        </div>
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo.png" width="138" height="70" alt="city of sedona">
+        </a>
         <ul class="site-navigation">
           <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
           <li><a href="photo-video.html">ФОТО И ВИДЕО</a></li>
@@ -28,6 +27,7 @@
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="form-hotels" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
+          <div class="infrastructure">
             <legend>Инфраструктура:</legend>
             <label>
               <input type="checkbox" name="pull" checked>
@@ -41,9 +41,11 @@
               <input type="checkbox" name="wi-fi">
               <span>Wi-Fi</span>
             </label>
+          </div>
           </fieldset>
           <fieldset>
-            <legend>Тип жилья</legend>
+          <div class="type-houseroom">
+            <legend>Тип жилья:</legend>
             <label>
               <input type="checkbox" name="hotel" checked>
               <span>Гостиница</span>
@@ -56,21 +58,24 @@
               <input type="checkbox" name="appatment" checked>
               <span>Апартаменты</span>
             </label>
+          </div>
           </fieldset>
           <fieldset>
+          <div class="pay">
             <legend>Стоимость в сутки(Р):</legend>
             <label>От<input type="text" value="0" name="form"></label>
             <label>До<input type="text" value="3000" name="before"></label>
             <input type="range" name="range">
             <button type="button" name="submit" name="button">Показать</button>
+          </div>
           </fieldset>
       </section>
-      <section>
+      <section class="sorting-hotels">
         <div class="found">
           <b>НАЙДЕНО:3</b>
         </div>
         <div class="sorting">
-          <span>СОРТИРОВКА</span>
+          <span>СОРТИРОВКА:</span>
           <ul class="sorting-list">
             <li><a class="active" href="#">ПО ЦЕНЕ</a></li>
             <li><a href="#">ПО ТИПУ</a></li>
@@ -78,81 +83,81 @@
           </ul>
           <ul class="sorting-list-rating">
             <li>
-              <a class="up" href="#"><img src="img/iconupdir.svg" width="150" height="150" alt="iconup"></a>
+              <!--<a class="up" href="#"><img src="img/iconupdir.svg" width="150" height="150" alt="iconup"></a>-->
             </li>
             <li>
-              <a class="down" href="#"><img src="img/icondowndir.svg" width="150" height="150" alt="icondown"></a>
+              <!--<a class="down" href="#"><img src="img/icondowndir.svg" width="150" height="150" alt="icondown"></a>-->
             </li>
           </ul>
         </div>
       </section>
       <section class="found-hotel">
-        <article>
+        <article class="results-block">
           <div class="results-image">
-            <img src="img/aamara.png" width="150" height="100"  alt="AMARA RESORT & SPA">
+            <img src="img/aamara.png" width="135" height="90"  alt="AMARA RESORT & SPA">
           </div>
           <div class="result-description">
           <h2 class="hotels"><a href="#">AMARA RESORT & SPA</a></h2>
             <span>ГОСТИНИЦА</span>
-            <span class="moreinfo"><a href="#" width="110" height="27">ПОДРОБНЕЕ</a></span>
+            <a class="moreinfo" href="#">ПОДРОБНЕЕ</a>
           </div>
           <div class="result-description">
             <span>ОТ 4000 Р.</span>
-            <span class="bookit"><a href="#">ЗАБРОНИРОВАТЬ</a></span>
+            <a class="bookit href="#">ЗАБРОНИРОВАТЬ</a>
           </div>
           <div class="rating">
             <div class="rating-star">
-              <span class="icon-star"><img src="img/star.svg" width="150" height="150" alt="star"></span>
-              <span class="icon-star"><img src="img/star.svg" width="150" height="150" alt="star"></span>
-              <span class="icon-star"><img src="img/star.svg" width="150" height="150" alt="star"></span>
-              <span class="icon-star"><img src="img/star.svg" width="150" height="150" alt="star"></span>
+              <span class="icon-star"><img src="img/star.svg" width="18" height="17" alt="star"></span>
+              <span class="icon-star"><img src="img/star.svg" width="18" height="17" alt="star"></span>
+              <span class="icon-star"><img src="img/star.svg" width="18" height="17" alt="star"></span>
+              <span class="icon-star"><img src="img/star.svg" width="18" height="17" alt="star"></span>
             </div>
             <div class="rating-sum">
               <span>РЕЙТИНГ:8,5</span>
             </div>
           </div>
         </article>
-        <article>
+        <article class="results-block">
           <div class="results-image">
-            <img src="img/ddesert.png" width="150" height="100"  alt="DESERT QUAIL INN">
+            <img src="img/ddesert.png" width="135" height="90"  alt="DESERT QUAIL INN">
           </div>
           <div class="result-description">
             <h2 class="hotels"><a href="#">DESERT QUAIL INN</a></h2>
             <span>МОТЕЛЬ</span>
-            <span class="moreinfo"><a href="#">ПОДРОБНЕЕ</a></span>
+            <a class="moreinfo" href="#">ПОДРОБНЕЕ</a>
           </div>
           <div class="result-description">
             <span>ОТ 3000 Р.</span>
-            <span class="bookit"><a href="#">ЗАБРОНИРОВАТЬ</a><span>
+            <a class="bookit" href="#">ЗАБРОНИРОВАТЬ</a>
           </div>
           <div class="rating">
             <div class="rating-star">
-              <span class="icon-star"><img src="img/star.svg" width="150" height="150" alt="star"></span>
-              <span class="icon-star"><img src="img/star.svg" width="150" height="150" alt="star"></span>
-              <span class="icon-star"><img src="img/star.svg" width="150" height="150" alt="star"></span>
+              <span class="icon-star"><img src="img/star.svg" width="18" height="17" alt="star"></span>
+              <span class="icon-star"><img src="img/star.svg" width="18" height="17" alt="star"></span>
+              <span class="icon-star"><img src="img/star.svg" width="18" height="17" alt="star"></span>
             </div>
             <div class="rating-sum">
               <span>РЕЙТИНГ:8,9</span>
             </div>
           </div>
         </article>
-        <article>
+        <article class="results-block">
           <div class="results-image">
-            <img src="img/vvillas.png" width="150" height="100"  alt="VILLAS AT POCO DIABLO">
+            <img src="img/vvillas.png" width="135" height="90"  alt="VILLAS AT POCO DIABLO">
           </div>
           <div class="result-description">
             <h2 class="hotels"><a href="#">VILLAS AT POCO DIABLO</a></h2>
             <span>АПАРТАМЕНТЫ</span>
-            <span class="moreinfo"><a href="#">ПОДРОБНЕЕ</a></span>
+            <a class="moreinfo" href="#">ПОДРОБНЕЕ</a>
           </div>
           <div class="result-description">
             <span>ОТ 2000 Р.</span>
-            <span class="bookit"><a href="#">ЗАБРОНИРОВАТЬ</a></span>
+            <a class="bookit" href="#">ЗАБРОНИРОВАТЬ</a>
           </div>
           <div class="rating">
             <div class="rating-star">
-              <span class="icon-star"><img src="img/star.svg" width="150" height="150" alt="star"></span>
-              <span class="icon-star"><img src="img/star.svg" width="150" height="150" alt="star"></span>
+              <span class="icon-star"><img src="img/star.svg" width="18" height="17" alt="star"></span>
+              <span class="icon-star"><img src="img/star.svg" width="18" height="17" alt="star"></span>
             </div>
             <div class="rating-sum">
               <span>РЕЙТИНГ:9,2</span>
@@ -167,9 +172,15 @@
       </div>
       <div class="social width-social">
         <ul>
-          <li class="socialbc twitter"><a href="https://twitter.com"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a></li>
-          <li class="socialbc facebook"><a href="https://www.facebook.com"><img src="img/fb.svg" width="12" height="22" alt="Facebook"></a></li>
-          <li class="socialbc youtube"><a href="https://www.youtube.com"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a></li>
+          <li class="socialbc twitter">
+            <a href="https://twitter.com"><img src="img/twitter.svg" width="17" height="15" alt="Twitter"></a>
+          </li>
+          <li class="socialbc facebook">
+            <a href="https://www.facebook.com"><img src="img/fb.svg" width="12" height="22" alt="Facebook"></a>
+          </li>
+          <li class="socialbc youtube">
+            <a href="https://www.youtube.com"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a>
+          </li>
         </ul>
       </div>
       <div class="developer-item width-social">
@@ -177,5 +188,6 @@
       </div>
     </div>
     </footer>
+    <div>
   </body>
 </html>
