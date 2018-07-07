@@ -30,7 +30,7 @@
           <div class="infrastructure">
             <legend>Инфраструктура:</legend>
             <label>
-              <input type="checkbox" name="pull" checked>
+              <input type="checkbox" name="pull" class="checked" checked>
               <span>Бассейн</span>
             </label>
             <label>
@@ -61,13 +61,23 @@
           </div>
           </fieldset>
           <fieldset>
-          <div class="pay">
-            <legend>Стоимость в сутки(Р):</legend>
-            <label>От<input type="text" value="0" name="form"></label>
-            <label>До<input type="text" value="3000" name="before"></label>
-            <input type="range" name="range">
-            <button type="button" name="submit" name="button">Показать</button>
-          </div>
+            <div class="filter-range">
+              <div class="filter-range-title">
+                Стоимость в сутки (р):
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+            </div>
           </fieldset>
       </section>
       <section class="sorting-hotels">
@@ -96,14 +106,16 @@
           <div class="results-image">
             <img src="img/aamara.png" width="135" height="90"  alt="AMARA RESORT & SPA">
           </div>
-          <div class="result-description">
-          <h2 class="hotels"><a href="#">AMARA RESORT & SPA</a></h2>
-            <span>ГОСТИНИЦА</span>
-            <a class="moreinfo" href="#">ПОДРОБНЕЕ</a>
-          </div>
-          <div class="result-description">
-            <span>ОТ 4000 Р.</span>
-            <a class="bookit href="#">ЗАБРОНИРОВАТЬ</a>
+          <div class="rd">
+            <h2 class="hotels"><a href="#">AMARA RESORT & SPA</a></h2>
+            <div class="result-description">
+              <span>ГОСТИНИЦА</span>
+              <a class="moreinfo" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="result-description">
+              <span>ОТ 4000 Р.</span>
+              <a class="bookit href="#">ЗАБРОНИРОВАТЬ</a>
+            </div>
           </div>
           <div class="rating">
             <div class="rating-star">
@@ -121,14 +133,16 @@
           <div class="results-image">
             <img src="img/ddesert.png" width="135" height="90"  alt="DESERT QUAIL INN">
           </div>
-          <div class="result-description">
+          <div class="rd">
             <h2 class="hotels"><a href="#">DESERT QUAIL INN</a></h2>
-            <span>МОТЕЛЬ</span>
-            <a class="moreinfo" href="#">ПОДРОБНЕЕ</a>
-          </div>
-          <div class="result-description">
-            <span>ОТ 3000 Р.</span>
-            <a class="bookit" href="#">ЗАБРОНИРОВАТЬ</a>
+            <div class="result-description">
+              <span>МОТЕЛЬ</span>
+              <a class="moreinfo" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="result-description">
+              <span>ОТ 3000 Р.</span>
+              <a class="bookit" href="#">ЗАБРОНИРОВАТЬ</a>
+            </div>
           </div>
           <div class="rating">
             <div class="rating-star">
@@ -145,14 +159,16 @@
           <div class="results-image">
             <img src="img/vvillas.png" width="135" height="90"  alt="VILLAS AT POCO DIABLO">
           </div>
-          <div class="result-description">
+          <div class="rd">
             <h2 class="hotels"><a href="#">VILLAS AT POCO DIABLO</a></h2>
-            <span>АПАРТАМЕНТЫ</span>
-            <a class="moreinfo" href="#">ПОДРОБНЕЕ</a>
-          </div>
-          <div class="result-description">
-            <span>ОТ 2000 Р.</span>
-            <a class="bookit" href="#">ЗАБРОНИРОВАТЬ</a>
+            <div class="result-description">
+              <span>АПАРТАМЕНТЫ</span>
+              <a class="moreinfo" href="#">ПОДРОБНЕЕ</a>
+            </div>
+            <div class="result-description">
+              <span>ОТ 2000 Р.</span>
+              <a class="bookit" href="#">ЗАБРОНИРОВАТЬ</a>
+            </div>
           </div>
           <div class="rating">
             <div class="rating-star">
@@ -187,6 +203,23 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="200" height="200" alt="HTML Academy"></a>
       </div>
     </div>
+    <!------------------------------------------------------------------------------------------------------->
+    <div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (р):</div>
+      <div class="price-controls">
+        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
+    </div>
+    <!------------------------------------------------------------------------------------------------------->
     </footer>
     <div>
   </body>
