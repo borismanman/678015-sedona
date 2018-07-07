@@ -27,36 +27,42 @@
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="form-hotels" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-          <div class="infrastructure">
+          <div class="infrastructure filter-checkbox">
             <legend>Инфраструктура:</legend>
             <label>
-              <input type="checkbox" name="pull" class="checked" checked>
-              <span>Бассейн</span>
+              <input type="checkbox" name="pull" class="checkbox" checked>
+              <span class="checkbox-custom"></span>
+              <span class="label">Бассейн</span>
             </label>
             <label>
-              <input type="checkbox" name="parking">
-              <span>Парковка</span>
+              <input class="checkbox" type="checkbox" name="parking">
+              <span class="checkbox-custom"></span>
+              <span class="label">Парковка</span>
             </label>
             <label>
-              <input type="checkbox" name="wi-fi">
-              <span>Wi-Fi</span>
+              <input class="checkbox" type="checkbox" name="wi-fi">
+              <span class="checkbox-custom"></span>
+              <span class="label">Wi-Fi</span>
             </label>
           </div>
           </fieldset>
           <fieldset>
-          <div class="type-houseroom">
+          <div class="type-houseroom filter-checkbox">
             <legend>Тип жилья:</legend>
             <label>
-              <input type="checkbox" name="hotel" checked>
-              <span>Гостиница</span>
+              <input class="checkbox" type="checkbox" name="hotel" checked>
+              <span class="checkbox-custom"></span>
+              <span class="label">Гостиница</span>
             </label>
             <label>
-              <input type="checkbox" name="motel" checked>
-              <span>Мотель</span>
+              <input class="checkbox" type="checkbox" name="motel" checked>
+              <span class="checkbox-custom"></span>
+              <span class="label">Мотель</span>
             </label>
             <label>
-              <input type="checkbox" name="appatment" checked>
-              <span>Апартаменты</span>
+              <input class="checkbox" type="checkbox" name="appatment" checked>
+              <span class="checkbox-custom"></span>
+              <span class="label">Апартаменты</span>
             </label>
           </div>
           </fieldset>
@@ -93,10 +99,10 @@
           </ul>
           <ul class="sorting-list-rating">
             <li>
-              <!--<a class="up" href="#"><img src="img/iconupdir.svg" width="150" height="150" alt="iconup"></a>-->
+              <a class="up" href="#"></span></a>
             </li>
             <li>
-              <!--<a class="down" href="#"><img src="img/icondowndir.svg" width="150" height="150" alt="icondown"></a>-->
+              <a class="down active" href="#"></span></a>
             </li>
           </ul>
         </div>
@@ -200,26 +206,10 @@
         </ul>
       </div>
       <div class="developer-item width-social">
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="200" height="200" alt="HTML Academy"></a>
+        <span class="webs">website by</span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
       </div>
     </div>
-    <!------------------------------------------------------------------------------------------------------->
-    <div class="filter-range">
-      <div class="filter-range-title">Стоимость в сутки (р):</div>
-      <div class="price-controls">
-        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-      </div>
-      <div class="range-controls">
-        <div class="scale">
-          <div class="bar"></div>
-        </div>
-        <div class="range-toggle range-toggle-min"></div>
-        <div class="range-toggle range-toggle-max"></div>
-      </div>
-      <button class="btn-transparent" type="submit">Показать</button>
-    </div>
-    <!------------------------------------------------------------------------------------------------------->
     </footer>
     <div>
   </body>
