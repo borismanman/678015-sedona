@@ -27,8 +27,8 @@
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <form class="form-hotels" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
-          <div class="infrastructure filter-checkbox">
-            <legend>Инфраструктура:</legend>
+            <legend class="infra">Инфраструктура:</legend>
+            <div class="infrastructure filter-checkbox">
             <label>
               <input type="checkbox" name="pull" class="checkbox" checked>
               <span class="checkbox-custom"></span>
@@ -47,8 +47,8 @@
           </div>
           </fieldset>
           <fieldset>
-          <div class="type-houseroom filter-checkbox">
-            <legend>Тип жилья:</legend>
+            <legend class="htype">Тип жилья:</legend>
+            <div class="type-houseroom filter-checkbox">
             <label>
               <input class="checkbox" type="checkbox" name="hotel" checked>
               <span class="checkbox-custom"></span>
@@ -72,8 +72,8 @@
                 Стоимость в сутки (р):
               </div>
               <div class="price-controls">
-                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                <label class="min-price">от<input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
               </div>
               <div class="range-controls">
                 <div class="scale">
@@ -85,6 +85,7 @@
               <button class="btn-transparent" type="submit">Показать</button>
             </div>
           </fieldset>
+        </form>
       </section>
       <section class="sorting-hotels">
         <div class="found">
@@ -99,10 +100,10 @@
           </ul>
           <ul class="sorting-list-rating">
             <li>
-              <a class="up" href="#"></span></a>
+              <a class="up" href="#"></a>
             </li>
             <li>
-              <a class="down active" href="#"></span></a>
+              <a class="down active" href="#"></a>
             </li>
           </ul>
         </div>
@@ -120,7 +121,7 @@
             </div>
             <div class="result-description">
               <span>ОТ 4000 Р.</span>
-              <a class="bookit href="#">ЗАБРОНИРОВАТЬ</a>
+              <a class="bookit" href="#">ЗАБРОНИРОВАТЬ</a>
             </div>
           </div>
           <div class="rating">
@@ -137,7 +138,7 @@
         </article>
         <article class="results-block">
           <div class="results-image">
-            <img src="img/ddesert.png" width="135" height="90"  alt="DESERT QUAIL INN">
+            <img src="img/ddesert.png" width="135" height="90" alt="DESERT QUAIL INN">
           </div>
           <div class="rd">
             <h2 class="hotels"><a href="#">DESERT QUAIL INN</a></h2>
@@ -209,8 +210,7 @@
         <span class="webs">website by</span>
         <a href="https://htmlacademy.ru/intensive/htmlcss"></a>
       </div>
-    </div>
     </footer>
-    <div>
+    </div>
   </body>
 </html>
