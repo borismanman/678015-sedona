@@ -510,8 +510,8 @@ ul .causes-block-2 p {
 	position: relative;
 	width: 40%;
 	text-align: left;
-	margin-right: 10px;
-	padding-left: 14px;
+	margin-right: 3px;
+	padding-left: 32px;
 }
 
 .buttonS {
@@ -842,7 +842,8 @@ ul .causes-block-2 p {
 	background-color: #f2f2f2;
 	text-align: center;
 	position: relative;
-	margin-left: 48px;
+	margin-left: 49px;
+    margin-right: 29px;
 }
 
 .minus {
@@ -850,7 +851,7 @@ ul .causes-block-2 p {
 	border: none;
 	outline: none;
 	list-style: none;
-	margin-left: 39px;
+    margin-left: 19px;
 	padding-bottom: 7px;
 }
 
@@ -859,18 +860,7 @@ ul .causes-block-2 p {
 	border: none;
 	outline: none;
 	list-style: none;
-	margin-left: 115px;
-}
-
-.plusch {
-	position: absolute;
-	margin-left: 94px;
-}
-
-.minusch {
-	position: absolute;
-	margin-left: 19px;
-	padding-bottom: 7px;
+	margin-left: 93px;
 }
 
 .minus::before {
@@ -895,31 +885,6 @@ ul .causes-block-2 p {
 }
 
 .plus:focus::before {
-	content: url("../img/plusblue.png");
-}
-
-.minusch::before {
-	content: url("../img/minusgray.png");
-	text-align: center;
-}
-
-.minusch:hover::before {
-	content: url("../img/minusblack.png");
-}
-
-.minusch:focus::before {
-	content: url("../img/minusblue.png");
-}
-
-.plusch::before {
-	content: url("../img/plusgray.png");
-}
-
-.plusch:hover::before {
-	content: url("../img/plusblack.png");
-}
-
-.plusch:focus::before {
 	content: url("../img/plusblue.png");
 }
 
@@ -1281,6 +1246,15 @@ a.active {
 
 .sorting-list-rating li:nth-child(1) {
 	padding-right: 12px;
+}
+
+.infra {
+	padding-left: 56px;
+    margin-left: 0px;
+}
+
+.htype {
+	padding-right: 253px;
 }
 
 .active-hotel a {
