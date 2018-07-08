@@ -1282,3 +1282,8 @@ a.active {
 .sorting-list-rating li:nth-child(1) {
 	padding-right: 12px;
 }
+
+.active-hotel a {
+	color: #766357;
+	pointer-events: none;
+}
