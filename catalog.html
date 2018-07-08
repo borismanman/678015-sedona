@@ -2,9 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <title>HTML Academy: Седона</title>
   </head>
   <body>
     <div class="page-wrap">
@@ -17,7 +17,7 @@
           <li><a href="info.html">ИНФОРМАЦИЯ</a></li>
           <li><a href="photo-video.html">ФОТО И ВИДЕО</a></li>
           <li><a href="map.html">КАРТА ШТАТА</a></li>
-          <li class="active-hotel"><a href="hotel.html">ГОСТИНИЦЫ</a></li>
+          <li class="is-hotel"><a href="hotel.html">ГОСТИНИЦЫ</a></li>
         </ul>
       </nav>
     </header>
@@ -29,42 +29,42 @@
           <fieldset>
             <legend class="infra">Инфраструктура:</legend>
             <div class="infrastructure filter-checkbox">
-            <label>
-              <input type="checkbox" name="pull" class="checkbox" checked>
-              <span class="checkbox-custom"></span>
-              <span class="label">Бассейн</span>
-            </label>
-            <label>
-              <input class="checkbox" type="checkbox" name="parking">
-              <span class="checkbox-custom"></span>
-              <span class="label">Парковка</span>
-            </label>
-            <label>
-              <input class="checkbox" type="checkbox" name="wi-fi">
-              <span class="checkbox-custom"></span>
-              <span class="label">Wi-Fi</span>
-            </label>
-          </div>
+              <label>
+                <input type="checkbox" name="pull" class="checkbox" checked>
+                <span class="checkbox-custom"></span>
+                <span class="label">Бассейн</span>
+              </label>
+              <label>
+                <input class="checkbox" type="checkbox" name="parking">
+                <span class="checkbox-custom"></span>
+                <span class="label">Парковка</span>
+              </label>
+              <label>
+                <input class="checkbox" type="checkbox" name="wi-fi">
+                <span class="checkbox-custom"></span>
+                <span class="label">Wi-Fi</span>
+              </label>
+            </div>
           </fieldset>
           <fieldset>
             <legend class="htype">Тип жилья:</legend>
             <div class="type-houseroom filter-checkbox">
-            <label>
-              <input class="checkbox" type="checkbox" name="hotel" checked>
-              <span class="checkbox-custom"></span>
-              <span class="label">Гостиница</span>
-            </label>
-            <label>
-              <input class="checkbox" type="checkbox" name="motel" checked>
-              <span class="checkbox-custom"></span>
-              <span class="label">Мотель</span>
-            </label>
-            <label>
-              <input class="checkbox" type="checkbox" name="appatment" checked>
-              <span class="checkbox-custom"></span>
-              <span class="label">Апартаменты</span>
-            </label>
-          </div>
+              <label>
+                <input class="checkbox" type="checkbox" name="hotel" checked>
+                <span class="checkbox-custom"></span>
+                <span class="label">Гостиница</span>
+              </label>
+              <label>
+                <input class="checkbox" type="checkbox" name="motel" checked>
+                <span class="checkbox-custom"></span>
+                <span class="label">Мотель</span>
+              </label>
+              <label>
+                <input class="checkbox" type="checkbox" name="appatment" checked>
+                <span class="checkbox-custom"></span>
+                <span class="label">Апартаменты</span>
+              </label>
+            </div>
           </fieldset>
           <fieldset>
             <div class="filter-range">
@@ -100,10 +100,10 @@
           </ul>
           <ul class="sorting-list-rating">
             <li>
-              <a class="up" href="#"></a>
+              <a class="up" href="#"><span class="visually-hidden">По возрастанию</span></a>
             </li>
             <li>
-              <a class="down active" href="#"></a>
+              <a class="down active" href="#"><span class="visually-hidden">По убыванию</span></a>
             </li>
           </ul>
         </div>
